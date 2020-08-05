@@ -1,0 +1,11 @@
+---
+# 10-dot-ssh-setup.yml
+
+  - name: 10-dot-ssh-setup.yml
+    file:
+      path: ~/.ssh
+      state: directory
+      mode: 0700
+      owner: "{{ username }}"
+      group: "{{ groupname }}"
+
