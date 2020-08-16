@@ -1,0 +1,12 @@
+---
+# common.yml
+- hosts: localhost
+  gather_facts: no
+  connection: local
+
+  vars:
+    username: rharold
+    groupname: rharold
+
+  roles:
+    - dot-ssh-setup

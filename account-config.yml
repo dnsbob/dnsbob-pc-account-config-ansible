@@ -1,10 +1,2 @@
 ---
-- hosts: localhost
-  connection: local
-
-  vars:
-    username: rharold
-    groupname: rharold
-
-  roles:
-    - role: myconfig
+- import_playbook: common.yml
