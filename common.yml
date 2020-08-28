@@ -10,3 +10,4 @@
 
   roles:
     - dot-ssh-setup
+    - common-apps

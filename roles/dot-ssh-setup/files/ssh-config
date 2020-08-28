@@ -1,0 +1,3 @@
+ServerAliveInterval 30
+ControlMaster auto
+ControlPath /home/$u/.ssh/master/%l-%r@%h:%p

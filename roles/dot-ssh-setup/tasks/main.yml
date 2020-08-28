@@ -1,10 +1,28 @@
 ---
 # dot-ssh-setup.yml
 
-  - name: dot-ssh-setup.yml
+  - name: dot-ssh-setup
     file:
       path: ~/.ssh
       state: directory
       mode: 0700
       owner: "{{ username }}"
       group: "{{ groupname }}"
+
+  - name: dot-ssh-config
+    copy:
+      src: ssh-config
+      dest: ~/.ssh/config
+      mode: 0600
+      owner: "{{ username }}"
+      group: "{{ groupname }}"
+
+  - name: dot-ssh-master
+    file:
+      path: ~/.ssh/master
+      state: directory
+      mode: 0700
+      owner: "{{ username }}"
+      group: "{{ groupname }}"
+
+      

@@ -1,0 +1,20 @@
+---
+# common-apps
+
+  - name: apt install apps
+    apt:
+      name:
+        - gparted
+        - timeshift
+        - sshfs
+        - python3-pip
+        - git
+        - inetutils-traceroute
+        - openssh-server
+        - openssh-sftp-server
+        - remmina
+        - remmina-plugin-rdp
+        - screen
+        - pdfshuffler
+        - psensor
+    become: yes
