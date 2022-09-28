@@ -12,3 +12,7 @@ common-apps
 
 dot-ss-setup  
 -  set up ssh configuration  
+
+
+sharedrive.yml  
+-  sharedrive role  
